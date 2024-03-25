@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+ 
+}
+body{
+    background-color: #0f051e;
+    color: wheat;
+}
+
+
+
+.btn{
+    padding: 15px 35px;
+    background: linear-gradient(to left, #4200fc , #f901fc);
+    border-radius: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    transition: .8s;
+}
+
+.btn:hover{
+    background: linear-gradient(to left,#fff , #f901fc);
+    color: #4200fc;
+    
+    box-shadow: 0px -1px 5px 6px purple;
+}
+
+
+
+
+.contanier{
+    width: 100%;
+    height: 100vh;
+    background-color: #0f051e;
+}
+header nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-top: 20px;
+    z-index: 100;
+    position: relative;
+}
+header nav .logo{
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(to left, #4200fc , #f901fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header nav .nav-links a{
+    color: #fff;
+    margin-left: 50px;
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.nav-links a:hover{
+    background: linear-gradient(to left, #4200fc , #f901fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+header nav .nav-links a::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(to left, #4200fc , #f901fc);
+    transition: 0.3s;
+}
+header nav .nav-links a:hover::after{
+    width: 100%;
+    
+}
+
+.content{
+    padding-top: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.content span{
+    background: linear-gradient(to left, #4200fc , #f901fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.content p{
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.hero-img {
+    position: relative;
+    top: 7px;
+ 
+    left: 48px;
+    border-radius: 50%;
+  
+    border: 5px solid purple;
+    /* animation: spam; */
+    animation-name: spam;
+    border-left-color: transparent;
+    
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    transition: .8s;
+    box-shadow: 0px 0px 0px 0px purple;
+}
+
+.hero-img:hover{
+    border: 5px solid #f901fc;
+    box-shadow: #f901fc;
+    cursor: pointer;
+   transition: .8s;
+    box-shadow: 0px -1px 20px 12px purple;
+}
+
+
+
+
+
+
+
+.hero-img img{
+    width: 380px;
+    transition: .8s;
+}
+
+.soial-links{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    right: 20px;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+.soial-links a{
+    color: #fff;
+    font-size: 22px;
+    transition: 0.4s;
+}
+.soial-links a:hover{
+    transform: scale(1.4);
+}
+.soial-links span{
+    color: #fff;
+    font-weight: 500;
+    transform: rotate(90deg);
+    margin-bottom: 40px;
+}
+
+.contanier2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.moiv2{
+    width: 300px;
+    background-color: transparent;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px;
+    box-shadow: 0px 0px 10px 1px #080808;
+}
+.moiv3{
+    width: 300px;
+    background-color: transparent;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px;
+    box-shadow: 0px 0px 10px 1px #080808;
+}
+.moiv{
+    width: 300px;
+    background-color: transparent;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px;
+    box-shadow: 0px 0px 10px 1px #080808;
+}
+.moiv:hover{
+  
+    cursor: pointer;
+   transition: .8s;
+   box-shadow: 0px 0px 20px 2px purple;
+}
+
+
+.moiv-imag1{
+    background: url(source/popg.jpg),rgb(30,26,37);
+}
+.moiv1-imag2{
+    background: url(source/zomb8.jpg),rgb(30,26,37);
+}
+.moiv2-imag3{
+    background: url(source/car1.jpg),rgb(30,26,37);
+}
+.moiv-imag4{
+    background: url(source/foot2.jpg),rgb(30,26,37);
+}
+.moiv-imag5{
+    background: url(source/fort.jpg),rgb(30,26,37);
+}
+.moiv-imag6{
+    background: url(source/free.jpg),rgb(30,26,37);
+}
+.moiv-imag7{
+    background: url(source/zomb4.jpg),rgb(30,26,37);
+}
+.moiv-imag8{
+    background: url(source/zom2.jpg),rgb(30,26,37);
+}
+.moiv-imag9{
+    background: url(source/drem.jpg),rgb(30,26,37);
+}
+.moiv-imag10{
+    background: url(source/fott.jpg),rgb(30,26,37);
+}
+.moiv-imag11{
+    background: url(source/car3.jpg),rgb(30,26,37);
+}
+
+
+
+
+.moiv-imag{
+    width: 100%;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+    height: 302px;
+    background-size: cover;
+    background-blend-mode: screen;
+    position: relative;
+}
+
+
+.moiv-imag::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(transparent,transparent,transparent,#0f051e)
+    
+}
+.moiv-info{
+    margin: 0px 5px 0px 5px;
+}
+.moiv-info .title{
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(to left, #4200fc , #f901fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.moiv-info .geners{
+    font-size: 16px;
+    color: rgb(255, 187, 0);}
+
+.meve--text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.meve--text p{
+    color: rgb(105, 105, 105);
+}
+.meve--text span{
+    color:rgb(255, 187, 0) ;
+    margin-left: 10px;
+    font-size: 16px;
+
+
+}
+.meve--text span i{
+    margin-right: 7px;
+    color:rgb(255, 187, 0);
+}
+
+.text{
+    font-size: 16px;
+    color: wheat;
+    line-height: 150%;
+    margin-top: 14px;
+
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+
+}
+.action button{
+    width: 125px;
+    height: 25px;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin: 20px 0px 17px 5px;
+    color: rgb(255, 187, 0);
+    font-size: 16px;
+    border: 2px solid;
+    background: transparent;
+
+}
+
+.action-more{
+    margin: 25px 0px 17px 5px;
+    color: rgb(255, 187, 0);
+}
+.action-more i{
+    margin-left: 7px;
+}
